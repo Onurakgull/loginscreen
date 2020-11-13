@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+*{
+    padding:0;
+    margin: 0px;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+    -webkit-overflow-scrolling: touch;
+
+    &:focus{
+        outline: 0;
+    }
+}   
+body{
+    background: #F2F2F2;
+}
+.component{
+    .table{
+        width: 1600px;
+        height: 1200px;
+        background: #EEF0F7;
+        box-shadow: 0 4px 4px 0 rgba(#000000, 0.25);
+        
+        .oval{
+            margin: auto;
+            text-align: center;
+            background: linear-gradient(to bottom right,#ff8be0,#ffe364);
+            padding: 200px 200px;
+            width: 1000px;
+            height: 1000px;
+            border-radius: 50%;
+            .intable{ 
+                width: 640px;
+                height: 480px;
+                background: #FFFFFF;
+                display: flex;
+                text-align: center;
+                justify-content: center;
+                padding: 20px 20px;
+                box-shadow: 0 82px 77px -10px rgba( #051341, 0.34);
+                position: relative;
+                a{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50%;
+
+                    .svg{ 
+                        width: 25px;
+                        height: 25px;
+                        position: absolute;
+                        background: #FFFFFF;
+                        border: 1px solid #ffffff;
+                        right: -7px;
+                        top: -7px;                    
+                    }
+
+                }
+               
+                img{
+                    width: 300px;
+                    height: 440px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    &:hover{                       
+                        border: solid 1px black;
+                        top: 10px;
+                        left: 0 ;
+                    }
+                }
+                span{
+                    display: block;
+                    padding: 10px 20px;
+                    ul {
+                        .title{
+                            font-size: 30px;
+                            font-weight: bold;
+                            margin-bottom: 30px;
+                        }
+                        .paragrapy{
+                            font-size: 20px;
+                            font-weight: 400;
+                            margin-bottom: 10px;
+                        }
+                        input{
+                            width: 250px;
+                            height: 65px;
+                            font-size: 20px;
+                            border: solid 1px gray;
+                            border-radius: 10px;
+                            padding: 0 10px;
+                            margin-bottom: 15px;
+                    
+                        }
+                        button{
+                            width: 250px;
+                            height: 65px;
+                            font-size: 20px;
+                            border: solid 1px gray;
+                            border-radius: 10px;
+                            background: linear-gradient(#8BCDFF,#6888F3);
+                            color: #FFFFFF;
+                            cursor: pointer;
+                            margin-bottom: 5px;
+                            transition: 300ms all;
+                            &:hover{
+                                background: darken( #6888F3,0.65);
+                            }
+                        }
+                        
+                    
+                    }
+                }
+                
+            }
+        }
+    }
+}
